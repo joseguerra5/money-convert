@@ -1,0 +1,49 @@
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 3.125rem;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  & section {
+    background-color: var(--blue-300);
+    border-radius: 1.5rem;
+    width: 30rem;
+    height: 33rem;
+    border: 2px solid var(--blue-500);
+    align-items: center;
+    
+    
+
+    & form {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 5rem;
+
+      & label {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        width: 22rem;
+      }
+
+      & button {
+        width: 22rem;
+      }
+    }
+    & footer {
+      background-color: var(--blue-800);
+      display: flex;
+      flex-direction: column;
+      gap: .5rem;
+      width: 100%;
+
+    }
+  }
+}

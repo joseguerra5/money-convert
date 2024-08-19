@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+:root {
+  --blue-100: #080815;
+  --blue-200: #0E0F25;
+  --blue-300: #141534;
+  --blue-400: #1F2151;
+  --blue-500: #2F3279;
+  --blue-600: #2F34AB;
+  --blue-700: #4A5DCD;
+  --blue-800: #7D8DEC;
+  --blue-900: #B2B8DE;
+  --white-color: #F1F2F6;
+  
+  --ff-primary: "inter", system-ui, sans-serif;
+  --ff-secondary: "IBM Plex Mono", system-ui, sans-serif;
+
+  
+}
+
+
+body {
+  font: 500 1rem/1.25rem var(--ff-primary);
+  color: var(--white-color);
+  background: url(../assets/Background.png)  bottom/cover;
+}
+
+h1 {
+  font: 800 2rem/3rem var(--ff-primary);
+}
+
+button {
+  font: 600 1rem/1.25rem var(--ff-primary);
+  border-radius: 0.5rem;
+  background-color: var(--blue-600);
+  color: inherit;
+  border: none;
+  padding: 1rem 1.25rem;
+
+  &:hover {
+    background-color: var(--blue-700);
+  }
+  &:disabled{
+    background-color: var(--blue-600);
+    color: var(--blue-900);
+  } 
+}
+
+input, select {
+ appearance: none;
+ border-radius: .5rem;
+ padding: 1rem 1.25rem;
+
+ border: .125rem solid var(--blue-400);
+
+ background-color: var(--blue-200);
+ color: inherit;
+
+ /* Aparecer a borda em todos os navegadores */
+ 
+ &:hover {
+  border-color: var(--blue-700);
+ }
+ &:focus {
+  border-color: var(--blue-700);
+  outline: .12rem solid var(--blue-700);
+  outline-offset: .1px;
+ }
+}
+
+label{ 
+  font: 500 0.75rem/1rem var(--ff-primary);
+}
+
+span{
+  font: 500 1rem/1.25rem var(--ff-secondary);
+}
