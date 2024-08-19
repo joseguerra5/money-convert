@@ -27,6 +27,10 @@ body {
   font: 500 1rem/1.25rem var(--ff-primary);
   color: var(--white-color);
   background: url(../assets/Background.png)  bottom/cover;
+  display: flex;
+  margin-block: 10rem;
+  max-height: 100%;
+  align-items: center;
 }
 
 h1 {
@@ -78,4 +82,8 @@ label{
 
 span{
   font: 500 1rem/1.25rem var(--ff-secondary);
+}
+
+.none {
+  display: none;
 }

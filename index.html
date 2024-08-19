@@ -14,35 +14,39 @@
 </head>
 
 <body>
+
+  <header>
+    <img src="assets/logo.svg" alt="">
+  </header>
   
-<header><img src="assets/logo.svg" alt=""></header>
-<main>
-  <section class="main-section">
+  <main>
+    <section class="main-section">
 
-    <form action="">
-      <label for="value">
-        VALOR
-        <input type="text" name="" id="value">
-      </label>
-      <label for="coin">
-        MOEDA
-        <select name="" id="coin">
-          <option value="dolar">Dólar Americano</option>
-          <option value="euro">Euro</option>
-          <option value="japness-Yene">Iene japones</option>
-          <option value="argentine">Peso arguentino</option>
-          <option value="yuan">Yuan chines</option>
-        </select>
-      </label>
-      <button>Converter em reais</button>
-    </form>
-    <footer>
-      <span>US$ 1 = R$ 4,86</span>
-      <h2>500 reais</h2>
-    </footer>
-  </section>
+      <form action="">
+        <label for="amount">
+          VALOR
+          <input type="text" name="" id="amount">
+        </label>
+        <label for="coin">
+          MOEDA
+          <select name="" id="currency">
+            <option value="USD">Dólar Americano</option>
+            <option value="BRL">Real</option>
+            <option value="JPY">Iene japones</option>
+            <option value="ARS">Peso arguentino</option>
+            <option value="CNY">Yuan chines</option>
+          </select>
+        </label>
+        <button class="btn" id="btn-form">Converter em Euro</button>
+      </form>
+      <footer class="none">
+        <span id="description">US$ 1 = R$ 4,86</span>
+        <h2 id="result">500 reais</h2>
+      </footer>
+    </section>
 
-</main>
-</body> 
+  </main>
+  <script src="script.js"></script>
+</body>
 
 </html>
